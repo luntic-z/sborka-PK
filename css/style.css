@@ -213,19 +213,20 @@ h3 {
 
 .process__columns {
   display: flex;
-  justify-content: space-between;
 }
 
-.process__columns::after {
+.process__item::after {
   content: '';
   display: block;
-  width: 129.6rem;
+  width: 32.4rem;
   height: .2rem;
   position: absolute;
   top: 33rem;
-  left: 50%;
-  transform: translate(-50%, 0);
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.process__item:nth-child(2n)::after {
+  background: linear-gradient(94.26deg, #7C6AFA 9.51%, #C89AFC 90.23%);
 }
 
 .process__item {
