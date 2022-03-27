@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <div class="header__wrap">
+    <div class="header__wrap flex__space-between">
       <a href="#" class="header__logo">
         <img src="img/logo.svg" alt="">
       </a>
@@ -28,30 +28,31 @@
       <button type="button" class="button header__button">Оставить заявку</button>
     </div>
   </header>
+
   <main class="main">
     <section class="main-display">
       <div class="container">
         <h1 class="main-display__header">Собираем игровой ПК
           под ваш бюджет</h1>
         <div class="timer main-display__timer">
-          <div class="timer__item">
+          <div class="timer__item flex__center">
             <h3 class="timer__timer timer__timer-days">18</h3>
             <div class="timer__text">Дней</div>
           </div>
-          <div class="timer__item">
+          <div class="timer__item flex__center">
             <h3 class="timer__timer timer__timer-hours">18</h3>
             <div class="timer__text">Часов</div>
           </div>
-          <div class="timer__item">
+          <div class="timer__item flex__center">
             <h3 class="timer__timer timer__timer-minutes">18</h3>
             <div class="timer__text">Минут</div>
           </div>
-          <div class="timer__item">
+          <div class="timer__item flex__center">
             <h3 class="timer__timer timer__timer-seconds">18</h3>
             <div class="timer__text">Секунд</div>
           </div>
         </div>
-        <button class="button main-display__button">Оставить заявку</button>
+        <button type="button" class="button main-display__button">Оставить заявку</button>
       </div>
       <div class="main-display__background">
         <img src="img/main-screen__bgc.jpg" alt="">
@@ -60,7 +61,7 @@
 
     <section class="work">
       <div class="container">
-        <div class="work__wrap">
+        <div class="work__wrap flex__space-between">
           <div class="work__img">
             <img src="/img/about__img.png" alt="">
           </div>
@@ -78,41 +79,112 @@
 
     <section class="process">
       <div class="container">
-        <div class="process__wrap">
-          <div class="process__title">
-            <div class="process__img">
-              <img src="img/process__img.svg" alt="">
-            </div>
-            <h2 class="process__header">Процесс работы</h2>
+        <div class="process__title">
+          <div class="process__img">
+            <img src="img/process__img.svg" alt="">
           </div>
-          <p class="process__description">
-            Подробно рассказываем о том, как происходит сборка, от заявки до выдачи вашего заказа
-          </p>
-          <div class="process__columns">
-            <div class="process__item">
-              <h3 class="process__work">Заявка</h3>
-              <p class="process__text">
-                Мы получаем вашу заявку, связываемся с вами для уточнения деталей, чтобы понять ваши ожидания от
-                будущего компьютера.</p>
+          <h2 class="process__header">Процесс работы</h2>
+        </div>
+        <p class="process__description">
+          Подробно рассказываем о том, как происходит сборка, от заявки до выдачи вашего заказа
+        </p>
+        <div class="process__columns">
+          <div class="process__item">
+            <h3 class="process__work">Заявка</h3>
+            <p class="process__text">
+              Мы получаем вашу заявку, связываемся с вами для уточнения деталей, чтобы понять ваши ожидания от
+              будущего компьютера.</p>
+          </div>
+          <div class="process__item">
+            <h3 class="process__work">Подбор</h3>
+            <p class="process__text">
+              После оплаты подбираем комплектующие, которые дадут максимальную производительность. Заказываем их
+              напрямую у поставщиков.</p>
+          </div>
+          <div class="process__item">
+            <h3 class="process__work">Сборка</h3>
+            <p class="process__text">
+              Собираем компьютер, проводим стартовую диагностику, устанавливаем операционную систему и необходимые
+              драйверы для работы.</p>
+          </div>
+          <div class="process__item">
+            <h3 class="process__work">Выдача</h3>
+            <p class="process__text">
+              Отдаём компьютер вам в назначенный срок, проводим вместе тестирование, подписываем документы о
+              выполнении работы и гарантии.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="command">
+      <div class="container">
+        <div class="process__title">
+          <div class="process__img">
+            <img src="img/process__img.svg" alt="">
+          </div>
+          <h2 class="process__header">Наша команда</h2>
+        </div>
+
+        <div class="command__wrap flex__space-between">
+          <div class="command__worker flex__center">
+            <div class="command__photo">
+              <img src="/img/teacher-1.png" alt="">
             </div>
-            <div class="process__item">
-              <h3 class="process__work">Подбор</h3>
-              <p class="process__text">
-                После оплаты подбираем комплектующие, которые дадут максимальную производительность. Заказываем их
-                напрямую у поставщиков.</p>
+            <h4 class="command__name">Евгений Петров</h4>
+            <p class="command__work">Специалист по видеокартам</p>
+            <a href="#" class="button command__link">Биография</a>
+          </div>
+
+          <div class="command__worker flex__center">
+            <div class="command__photo">
+              <img src="/img/teacher-2.png" alt="">
             </div>
-            <div class="process__item">
-              <h3 class="process__work">Сборка</h3>
-              <p class="process__text">
-                Собираем компьютер, проводим стартовую диагностику, устанавливаем операционную систему и необходимые
-                драйверы для работы.</p>
+            <h4 class="command__name">Евгений Петров</h4>
+            <p class="command__work">Специалист по видеокартам</p>
+            <a href="#" class="button command__link">Биография</a>
+          </div>
+
+          <div class="command__worker flex__center">
+            <div class="command__photo">
+              <img src="/img/teacher-3.png" alt="">
             </div>
-            <div class="process__item">
-              <h3 class="process__work">Выдача</h3>
-              <p class="process__text">
-                Отдаём компьютер вам в назначенный срок, проводим вместе тестирование, подписываем документы о
-                выполнении работы и гарантии.</p>
-            </div>
+            <h4 class="command__name">Евгений Петров</h4>
+            <p class="command__work">Специалист по видеокартам</p>
+            <a href="#" class="button command__link">Биография</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="assembly">
+      <div class="container">
+        <div class="assembly__wrap flex__center">
+          <h2 class="assembly__header">Закажите свою уникальную сборку</h2>
+          <p class="assembly__description">
+            Мы свяжемся с вами, чтобы уточнить детали заказа</p>
+          <button type="button" class="button assembly__button">Оставить заявку</button>
+          <div class="socials assembly__socials">
+            <a href="#" class="socials__link flex__center">
+              <div class="socials__img">
+                <img src="img/vk.svg" alt="vk">
+              </div>
+            </a>
+            <a href="#" class="socials__link flex__center">
+              <div class="socials__img">
+                <img src="img/youtube.svg" alt="youtube">
+              </div>
+            </a>
+            <a href="#" class="socials__link flex__center">
+              <div class="socials__img">
+                <img src="img/facebook.svg" alt="facebook">
+              </div>
+            </a>
+            <a href="#" class="socials__link flex__center">
+              <div class="socials__img">
+                <img src="img/instagram.svg" alt="instagram">
+              </div>
+            </a>
           </div>
         </div>
       </div>
