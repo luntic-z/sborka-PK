@@ -4,19 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow: hidden;
-}
-
-body {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: -30px;
-  bottom: 0;
-  padding: 8px;
-  overflow-y: scroll;
-}
 
 html,
 body {
@@ -412,4 +399,9 @@ h4 {
 .noscroll {
   overflow: hidden;
   height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 20px;
+  bottom: 0;
 }
