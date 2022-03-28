@@ -12,9 +12,8 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  right: -30px;
+  right: -20px;
   bottom: 0;
-  padding: 8px;
   overflow-y: scroll;
 }
 
@@ -412,4 +411,9 @@ h4 {
 .noscroll {
   overflow: hidden;
   height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0px;
+  bottom: 0;
 }
