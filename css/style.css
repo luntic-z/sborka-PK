@@ -4,25 +4,19 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow: hidden;
-}
-
-body {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: -20px;
-  bottom: 0;
-  overflow-y: scroll;
-}
-
 html,
 body {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
   background-image: url('../img/bgc.jpg');
+}
+
+.noscroll {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  inset: 0 1.9rem 0 0;
 }
 
 img {
@@ -406,14 +400,4 @@ h4 {
 
 .hidden {
   display: none;
-}
-
-.noscroll {
-  overflow: hidden;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0px;
-  bottom: 0;
 }
