@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 0;
+html {
+  overflow: hidden;
+}
+
+body {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: -30px;
+  bottom: 0;
+  padding: 8px;
+  overflow-y: scroll;
 }
 
 html,
